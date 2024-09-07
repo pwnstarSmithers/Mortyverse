@@ -35,7 +35,7 @@ To build and run this application locally, follow these steps:
     ```
 2. Open the project in Xcode.
     ```bash
-    open RickAndMortyApp.xcodeproj
+    open Mortyverse.xcodeproj
     ```
 3. Build and run the application using a compatible iOS simulator or physical device.
 
