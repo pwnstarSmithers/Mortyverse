@@ -31,7 +31,7 @@ To build and run this application locally, follow these steps:
 
 1. Clone this repository to your local machine.
     ```bash
-    git clone <your-repo-url>
+    git clone <[your-repo-url](https://github.com/pwnstarSmithers/Mortyverse.git)>
     ```
 2. Open the project in Xcode.
     ```bash
