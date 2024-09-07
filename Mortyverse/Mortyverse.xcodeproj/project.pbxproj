@@ -76,6 +76,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		967B5F5D2C8C4CE30033AD22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		967B5F5E2C8C4CE90033AD22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		967B5F5F2C8C4CF20033AD22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		967B5F602C8C4CF90033AD22 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		967B5F612C8C4D0E0033AD22 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		967B5F622C8C4D140033AD22 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		96D4FB8F2C8C45E2000B8EC9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +141,12 @@
 		96D4FB9A2C8C45E2000B8EC9 /* Mortyverse */ = {
 			isa = PBXGroup;
 			children = (
+				967B5F622C8C4D140033AD22 /* Helpers */,
+				967B5F612C8C4D0E0033AD22 /* Networking */,
+				967B5F602C8C4CF90033AD22 /* Controllers */,
+				967B5F5F2C8C4CF20033AD22 /* ViewModels */,
+				967B5F5E2C8C4CE90033AD22 /* View */,
+				967B5F5D2C8C4CE30033AD22 /* Model */,
 				96D4FB9B2C8C45E2000B8EC9 /* AppDelegate.swift */,
 				96D4FB9D2C8C45E2000B8EC9 /* SceneDelegate.swift */,
 				96D4FB9F2C8C45E2000B8EC9 /* ViewController.swift */,
