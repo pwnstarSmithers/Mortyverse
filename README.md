@@ -1,7 +1,7 @@
-Here’s a template for your README file based on the information from the iOS take-home test:
+
 
 ```markdown
-# Rick and Morty Character Explorer
+# Mortyverse
 
 ## Project Overview
 
