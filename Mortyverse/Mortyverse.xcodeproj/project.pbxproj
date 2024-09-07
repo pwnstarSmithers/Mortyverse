@@ -86,6 +86,8 @@
 		967B5F5E2C8C4CE90033AD22 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				967B5F642C8C4DD60033AD22 /* buttons */,
+				967B5F632C8C4DCA0033AD22 /* cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +95,8 @@
 		967B5F5F2C8C4CF20033AD22 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				967B5F662C8C4DF90033AD22 /* Details */,
+				967B5F652C8C4DF40033AD22 /* Home */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -100,6 +104,8 @@
 		967B5F602C8C4CF90033AD22 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				967B5F682C8C4E110033AD22 /* Details */,
+				967B5F672C8C4E030033AD22 /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +122,48 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		967B5F632C8C4DCA0033AD22 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		967B5F642C8C4DD60033AD22 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		967B5F652C8C4DF40033AD22 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		967B5F662C8C4DF90033AD22 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		967B5F672C8C4E030033AD22 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		967B5F682C8C4E110033AD22 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		96D4FB8F2C8C45E2000B8EC9 = {
