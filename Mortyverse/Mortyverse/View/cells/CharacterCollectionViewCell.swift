@@ -17,4 +17,9 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     
     
     
+    
+    func setupView(with character: Character) {
+        
+    }
+    
 }

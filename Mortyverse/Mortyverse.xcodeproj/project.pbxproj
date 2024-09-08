@@ -18,6 +18,7 @@
 		96D4FBB32C8C45E3000B8EC9 /* MortyverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FBB22C8C45E3000B8EC9 /* MortyverseTests.swift */; };
 		96D4FBBD2C8C45E3000B8EC9 /* MortyverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FBBC2C8C45E3000B8EC9 /* MortyverseUITests.swift */; };
 		96D4FBBF2C8C45E3000B8EC9 /* MortyverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FBBE2C8C45E3000B8EC9 /* MortyverseUITestsLaunchTests.swift */; };
+		96DEB3082C8E1746002C9510 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB3072C8E1746002C9510 /* Characters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		96D4FBB82C8C45E3000B8EC9 /* MortyverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortyverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D4FBBC2C8C45E3000B8EC9 /* MortyverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyverseUITests.swift; sourceTree = "<group>"; };
 		96D4FBBE2C8C45E3000B8EC9 /* MortyverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96DEB3072C8E1746002C9510 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		967B5F5D2C8C4CE30033AD22 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				96DEB3072C8E1746002C9510 /* Characters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				966DF69C2C8C540E00A00897 /* CharacterCollectionViewCell.swift in Sources */,
+				96DEB3082C8E1746002C9510 /* Characters.swift in Sources */,
 				96D4FBA02C8C45E2000B8EC9 /* ViewController.swift in Sources */,
 				96D4FB9C2C8C45E2000B8EC9 /* AppDelegate.swift in Sources */,
 				96D4FB9E2C8C45E2000B8EC9 /* SceneDelegate.swift in Sources */,
