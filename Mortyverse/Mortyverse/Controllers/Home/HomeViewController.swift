@@ -9,4 +9,9 @@ import UIKit
 
 class HomeViewController: UICollectionViewController {
     
+    var viewModel: HomeViewModel?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
