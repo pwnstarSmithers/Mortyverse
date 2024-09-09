@@ -13,15 +13,19 @@ class HomeCoordinator: Coordinator {
         super.init(parentCoordinator: parentCoordinator)
     }
     
-    func primaryViewController() -> HomeViewController {
-        let model = HomeViewModel()
-        
-        let controller = HomeViewController()
-        controller.viewModel = model
-        return controller
-    }
+//    func primaryViewController() -> HomeViewController {
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+//        let model = HomeViewModel(count: 1)
+//        controller.viewModel = model
+//        return controller
+//    }
     
-    override func start(subCoordinator: Coordinator) {
-        navigationController?.pushViewController(primaryViewController(), animated: true)
+    override func start() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let model = HomeViewModel(count: 1)
+        controller.viewModel = model
+        navigationController?.pushViewController(controller, animated: true)
     }
 }

@@ -13,6 +13,7 @@
 		9629ABFC2C8EBDFE001BD60E /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9629ABFB2C8EBDFE001BD60E /* NetworkingClient.swift */; };
 		966DF69A2C8C506700A00897 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DF6992C8C506700A00897 /* HomeViewController.swift */; };
 		966DF69C2C8C540E00A00897 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DF69B2C8C540E00A00897 /* CharacterCollectionViewCell.swift */; };
+		967E67B92C8ED3220059A6D2 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E67B82C8ED3220059A6D2 /* BaseNavigationController.swift */; };
 		96D4FB9C2C8C45E2000B8EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FB9B2C8C45E2000B8EC9 /* AppDelegate.swift */; };
 		96D4FB9E2C8C45E2000B8EC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FB9D2C8C45E2000B8EC9 /* SceneDelegate.swift */; };
 		96D4FBA02C8C45E2000B8EC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FB9F2C8C45E2000B8EC9 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		9629ABFB2C8EBDFE001BD60E /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		966DF6992C8C506700A00897 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		966DF69B2C8C540E00A00897 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		967E67B82C8ED3220059A6D2 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		96D4FB982C8C45E2000B8EC9 /* Mortyverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mortyverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D4FB9B2C8C45E2000B8EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96D4FB9D2C8C45E2000B8EC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				9614E2AA2C8EC344000CE889 /* Coordinator.swift */,
+				967E67B82C8ED3220059A6D2 /* BaseNavigationController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				96DEB3082C8E1746002C9510 /* Characters.swift in Sources */,
 				9614E2A72C8EC0DD000CE889 /* HomeViewModel.swift in Sources */,
 				96D4FBA02C8C45E2000B8EC9 /* ViewController.swift in Sources */,
+				967E67B92C8ED3220059A6D2 /* BaseNavigationController.swift in Sources */,
 				96D4FB9C2C8C45E2000B8EC9 /* AppDelegate.swift in Sources */,
 				96D4FB9E2C8C45E2000B8EC9 /* SceneDelegate.swift in Sources */,
 				966DF69A2C8C506700A00897 /* HomeViewController.swift in Sources */,
@@ -651,7 +655,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -714,7 +718,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

@@ -14,17 +14,18 @@ final class HomeViewModel {
     let networkingClient = NetworkingClient()
     let disposeBag = DisposeBag()
     
-    var characters = [Characters]()
+    var characters: Characters?
+    var charactersObservable: PublishSubject<Characters> = PublishSubject()
     
-    init(characters: [Characters] = [Characters]()) {
-        self.characters = characters
-        getCharacters(count: 20)
+    init(count: Int) {
+        getCharacters(count: count)
     }
     
     private func getCharacters(count: Int) {
         networkingClient.getCharacters(page: 20)
-            .subscribe(onNext: { character in
-                print("Characters \(character)")
+            .subscribe(onNext: { characters in
+                self.characters = characters
+                print("Characters \(characters)")
             }, onError: { error in
                 print("There's an \(error)")
             })

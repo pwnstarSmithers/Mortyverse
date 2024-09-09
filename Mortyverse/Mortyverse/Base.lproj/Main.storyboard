@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="iH2-6I-9wd">
             <objects>
-                <collectionViewController id="x9E-EN-ZH2" customClass="HomeViewController" customModule="Mortyverse" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="x9E-EN-ZH2" customClass="HomeViewController" customModule="Mortyverse" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bVO-po-4fM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

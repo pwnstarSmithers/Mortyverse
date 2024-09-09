@@ -16,19 +16,23 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var characterTypeLabel: UILabel!
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("Init(coder: \(coder) has not been implemented")
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        characterImageView.layer.cornerRadius = characterImageView.frame.height / 2
+        characterImageView.clipsToBounds = true
+        
+        self.layer.cornerRadius = 12
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     func configure(with character: Character) {
         characterNameLabel.text = character.name
         characterTypeLabel.text = character.type
-        let imageUrl = URL(string: character.url)
-        characterImageView.kf.setImage(with: imageUrl)
+        if let imageUrl = URL(string: character.url) {
+            characterImageView.kf.setImage(with: imageUrl)
+        }
     }
     
 }
