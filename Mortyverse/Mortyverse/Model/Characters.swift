@@ -19,7 +19,7 @@ struct Info: Codable {
     let next, prev: String
 }
 
-// MARK: - Result
+// MARK: - Character
 struct Character: Codable {
     let id: Int
     let name, status, species, type: String
