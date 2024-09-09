@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9629ABFC2C8EBDFE001BD60E /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9629ABFB2C8EBDFE001BD60E /* NetworkingClient.swift */; };
 		966DF69A2C8C506700A00897 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DF6992C8C506700A00897 /* HomeViewController.swift */; };
 		966DF69C2C8C540E00A00897 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DF69B2C8C540E00A00897 /* CharacterCollectionViewCell.swift */; };
 		96D4FB9C2C8C45E2000B8EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4FB9B2C8C45E2000B8EC9 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		4629AF9830655AAB009474C4 /* Pods_MortyverseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortyverseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		623CBA5C0E08068E98A180B7 /* Pods-MortyverseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortyverseTests.debug.xcconfig"; path = "Target Support Files/Pods-MortyverseTests/Pods-MortyverseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69A2A1FF03D29D9750C3D9D0 /* Pods-Mortyverse-MortyverseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mortyverse-MortyverseUITests.release.xcconfig"; path = "Target Support Files/Pods-Mortyverse-MortyverseUITests/Pods-Mortyverse-MortyverseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9629ABFB2C8EBDFE001BD60E /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		966DF6992C8C506700A00897 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		966DF69B2C8C540E00A00897 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		96D4FB982C8C45E2000B8EC9 /* Mortyverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mortyverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 		967B5F612C8C4D0E0033AD22 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9629ABFB2C8EBDFE001BD60E /* NetworkingClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -269,7 +272,6 @@
 				623CBA5C0E08068E98A180B7 /* Pods-MortyverseTests.debug.xcconfig */,
 				DC6D8BE29797037C5B3F3F81 /* Pods-MortyverseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -530,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9629ABFC2C8EBDFE001BD60E /* NetworkingClient.swift in Sources */,
 				966DF69C2C8C540E00A00897 /* CharacterCollectionViewCell.swift in Sources */,
 				96DEB3082C8E1746002C9510 /* Characters.swift in Sources */,
 				96D4FBA02C8C45E2000B8EC9 /* ViewController.swift in Sources */,
