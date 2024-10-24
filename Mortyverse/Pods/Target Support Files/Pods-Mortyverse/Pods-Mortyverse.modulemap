@@ -1,0 +1,6 @@
+framework module Pods_Mortyverse {
+  umbrella header "Pods-Mortyverse-umbrella.h"
+
+  export *
+  module * { export * }
+}
