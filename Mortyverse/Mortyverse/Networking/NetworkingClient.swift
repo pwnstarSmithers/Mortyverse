@@ -12,6 +12,7 @@ import RxSwift
 // MARK: - API Definitions
 enum RickAndMortyAPI {
     case getCharacters(page: Int)
+    case getCharacterDetails(id: Int)  // New case for character details
 }
 
 // MARK: - Moya TargetType Conformance
@@ -24,6 +25,8 @@ extension RickAndMortyAPI: TargetType {
         switch self {
         case .getCharacters:
             return "/character"
+        case .getCharacterDetails(let id):
+            return "/character/\(id)"  // Path for character details
         }
     }
 
@@ -35,10 +38,12 @@ extension RickAndMortyAPI: TargetType {
         switch self {
         case .getCharacters(let page):
             return .requestParameters(parameters: ["page": page], encoding: URLEncoding.queryString)
+        case .getCharacterDetails:
+            return .requestPlain  // No parameters required for details request
         }
     }
 
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         return ["Content-Type": "application/json"]
     }
 
@@ -54,8 +59,17 @@ class NetworkingClient {
     func getCharacters(page: Int) -> Observable<Characters> {
         return provider.rx
             .request(.getCharacters(page: page))
-            .filterSuccessfulStatusCodes() // Ensure the request was successful
+            .filterSuccessfulStatusCodes()
             .map(Characters.self)
+            .asObservable()
+    }
+    
+    // New method for fetching character details
+    func getCharacterDetails(id: Int) -> Observable<Character> {
+        return provider.rx
+            .request(.getCharacterDetails(id: id))
+            .filterSuccessfulStatusCodes()
+            .map(Character.self)
             .asObservable()
     }
 }

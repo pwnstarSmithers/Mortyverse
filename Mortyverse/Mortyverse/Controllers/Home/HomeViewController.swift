@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import SwiftUI
 
 class HomeViewController: UICollectionViewController {
 
@@ -46,6 +47,16 @@ class HomeViewController: UICollectionViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    func showDetails(for character: Character) {
+        let detailsViewModel = DetailsViewModel(character: character)
+        let detailsView = DetailsView(viewModel: detailsViewModel)
+        let hostingController = UIHostingController(rootView: detailsView)
+        //navigationController?.present(hostingController, animated: true)
+        //navigationController?.pushViewController(hostingController, animated: true)
+        hostingController.modalPresentationStyle = .fullScreen  // Optional for full-screen presentation
+        present(hostingController, animated: true, completion: nil)
+    }
 
     // MARK: UICollectionView DataSource methods
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +75,12 @@ class HomeViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerID", for: indexPath) as! HeaderCollectionReusableView
         return headerView
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         guard let characters = characters?.results, indexPath.row < characters.count else { return }
+         let selectedCharacter = characters[indexPath.row]
+         showDetails(for: selectedCharacter)
     }
     
     
