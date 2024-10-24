@@ -29,8 +29,8 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     
     func configure(with character: Character) {
         characterNameLabel.text = character.name
-        characterTypeLabel.text = character.type
-        if let imageUrl = URL(string: character.url) {
+        characterTypeLabel.text = character.species
+        if let imageUrl = URL(string: character.image) {
             characterImageView.kf.setImage(with: imageUrl)
         }
     }
