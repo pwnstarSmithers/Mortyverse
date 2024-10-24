@@ -9,11 +9,12 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
+    private var coordinator: Coordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupCoordinator(application)
         return true
     }
 
@@ -31,6 +32,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    private func setupCoordinator(_ application: UIApplication) {
+        var window = application.windows.first { window in
+            window.isKeyWindow
+        }
+        window?.resignKey()
+        let navController = BaseNavigationController()
+        navController.setNavigationBarHidden(true, animated: false)
+        
+        let homeCoordinator = HomeCoordinator(parentCoordinator: coordinator)
+        homeCoordinator.start()
+        
+        window = nil
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
+        
+        self.window = window
+    }
 
 }
 
